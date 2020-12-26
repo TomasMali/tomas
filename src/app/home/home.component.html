@@ -1,0 +1,151 @@
+<div class="card card-body bg-primary text-white py-5">
+  <h2>Welcome To My Page</h2>
+  <p class="lead">Here you can find some information about me! </p>
+</div>
+
+
+
+
+    <div class="jumbotron mt-0">
+
+<div class="container about_me">
+
+
+
+    <div style="text-align: center;"> <b> Hello, I am Tomas Mali! </b>   </div>
+    <br>
+    <p>
+      Hey I have to tell something about myself. Sometimes it is hard to introduce yourself because you know yourself so
+      well
+      that you don't know where to start with. Let me give a try to see what kind of image you have about me through my
+      self-description.
+    </p>
+    <p>
+   <!--    I am 26 years old and I am from Albania, a little country situated in Southeast Europe on the Atlantic and Ionian
+      Sea.
+      I attended the high school in Italy (San Benedetto del Tronto) where I get the diploma with highest rank.
+      Since first year in high school I realized that
+      the technology is moving very fast and in the Computer Science area, jobs are getting more required from the big
+      companies. That's why i decided to
+      continue my studies from Computer Science University Of Padua where I have graduated in April 2018.
+      Since then I have started to explore, learn and create some small and medium projects on my own.
+      -->
+      I am a very positive person about every aspect of life. There are many things I like to do, to see, and to
+      experience.
+      Here is a portion of that:
+      I like to travel a lot, I like to read good books, I like to make new friends every day, to be surrounded by
+      people.
+      I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the
+      clouds in the sky with a blank mind, I like the land and i like the nature.
+
+      Of course, I am nowhere close to what I wantesd to be, yet. I am just someone who does some learning, some
+      research,
+      and
+      some writing. But my dream is still alive.
+    </p>
+    <p>
+      This is a brief introduction of myself. If you are interested in knowing more, read my resume or take a look at my
+      works. Do not expect too much, and keep your sense of humor.
+    </p> 
+
+  </div>
+
+
+    <br>
+<hr>
+
+<div class="row">
+  <div class="col-sm">
+      <div class="card">
+          <div class="card-header bg-primary text-white text-center">
+            
+              Github repository
+              
+            
+           </div>
+          <div class="card-body">
+
+             User name:  <input type="text" class=""  [(ngModel)]="userName">
+             <button class="btn btn-primary" (click)="getUsers()">Search</button>
+             <br>
+             <hr>
+             
+
+             <div class="container" *ngIf="response">
+            <p> Login name:  {{response.login}}  </p>
+            <p> Number of repos:  {{response.public_repos}}  </p>
+            <p> Number of gists:  {{response.public_gists}}  </p>
+            <p> Number of followers:  {{response.followers}}  </p>
+
+             </div>
+
+          </div> 
+          <div class="card-footer">Footer</div>
+       </div>
+  </div>
+  <div class="col-sm">
+      <div class="card">
+          <div class="card-header bg-primary text-white text-center">Some photos from my gallery</div>
+          <div class="card-body">
+          
+
+              <div id="demo" class="carousel slide" data-ride="carousel">
+                  
+                  <!-- Indicators -->
+                  <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                  </ul>
+                  
+                  <!-- The slideshow -->
+                  <div class="carousel-inner ">
+
+                    <div class="carousel-item active ">
+                      <img src="https://unsplash.it/600.jpg?image=257" alt="Los Angeles" width="1100" height="500" >
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://unsplash.it/600.jpg?image=258" alt="Chicago" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://unsplash.it/600.jpg?image=259" alt="New York" width="1100" height="500">
+                    </div>
+
+                  </div>
+            
+                  
+                  <!-- Left and right controls -->
+                  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </a>
+                </div>
+                  
+
+          </div> 
+          <div class="card-footer">Footer</div>
+       </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
